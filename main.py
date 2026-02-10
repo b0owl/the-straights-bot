@@ -17,6 +17,8 @@ from modules.someones_mom import someones_mom_cb
 from modules.help import help_cb
 from modules.purge import purge_cb
 from modules.say import say_cb
+from modules.ball import ball_cb
+
 
 # Initialize Discord client
 intents = discord.Intents.default()
@@ -31,6 +33,7 @@ def register_commands():
     add_command(NewCommand(help_cb, ".help"))
     add_command(NewCommand(purge_cb, ".purge"))
     add_command(NewCommand(say_cb, ".say"))
+    add_command(NewCommand(ball_cb, ".8ball"))
 
 @client.event
 async def on_ready():

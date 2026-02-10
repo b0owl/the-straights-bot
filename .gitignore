@@ -1,2 +1,4 @@
 .env
 data/quotes.txt
+__pycache__/
+*.pyc
